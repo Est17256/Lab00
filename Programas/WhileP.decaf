@@ -1,0 +1,11 @@
+class Program{
+    void main(){
+        int a;
+        int cont;
+        a = 10;
+        cont = 0;
+        while (cont < a){
+            cont += 1;
+        }
+    }
+}
