@@ -16,7 +16,8 @@ declaration
 varDeclaration 
 	:	varType id ';'	|	varType  id '[' num ']' ';'	;
 structDeclaration
-	:   'struct' id '{' (varDeclaration)* '}' (';')?	;
+	:   'struct' id '{' (varDeclaration)* '}'	;
+	// :   'struct' id '{' (varDeclaration)* '}' (';')?	;
 varType
 	:   'int'														
 	|   'char'														
@@ -32,7 +33,8 @@ methodType
 	|   'boolean'																																	
     |   'void'	;
 parameter
-	:	parameterType id   |    parameterType id '[' ']'	|	'void'	;
+	:	parameterType id   |    parameterType id '[' ']'	;
+	// :	parameterType id   |    parameterType id '[' ']'	|	'void'	;
 parameterType
 	:   'int'
 	|   'char'
